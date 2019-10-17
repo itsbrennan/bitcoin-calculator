@@ -20,8 +20,10 @@ document
     let message = '';
     if (profit > 0) {
       message = `Great! You made a profit of $${profit} (${growth})`;
+      document.querySelector('.result').style.color = 'green';
     } else if (profit < 0) {
       message = `Oh no you're at a loss of $${profit} (${growth})`;
+      document.querySelector('.result').style.color = 'red';
     } else {
       message = "Looks like you're breaking even";
     }
